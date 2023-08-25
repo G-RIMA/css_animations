@@ -120,6 +120,7 @@ main{
     max-width: 500px; /* Set a maximum width to prevent it from becoming too wide */
     margin: 0 auto; /* Center the slider horizontally within its container */
     cursor: pointer;
+    padding: 20px;
     transition: background-color 0.3s ease;
 }
 
