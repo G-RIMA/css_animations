@@ -110,17 +110,15 @@ main{
 
 /* Slider */
 .slider-section {
-    margin-bottom: 40px;
     position: relative;
     text-align: center; 
 }
 
 .slider {
     width: 80%; /* Adjust the width to your preference */
-    max-width: 500px; /* Set a maximum width to prevent it from becoming too wide */
-    margin: 0 auto; /* Center the slider horizontally within its container */
+    max-width: 1000px; /* Set a maximum width to prevent it from becoming too wide */
+    margin: 20px; /* Center the slider horizontally within its container */
     cursor: pointer;
-    padding: 20px;
     transition: background-color 0.3s ease;
 }
 
