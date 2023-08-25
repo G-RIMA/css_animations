@@ -111,7 +111,7 @@ main{
 /* Slider */
 .slider-section {
     margin-bottom: 40px;
-    position: absolute;
+    position: relative;
     text-align: center; 
 }
 
