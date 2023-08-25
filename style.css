@@ -108,18 +108,36 @@ main{
     transform: scale(1.1);
 }
 
-/* Slider */
-.slider-section {
+/* Slide-Show */
+.slideshow-container {
+    max-width: 800px;
     position: relative;
-    text-align: center; 
+    margin: auto;
 }
 
-.slider {
-    width: 80%; /* Adjust the width to your preference */
-    max-width: 1000px; /* Set a maximum width to prevent it from becoming too wide */
-    margin: 20px; /* Center the slider horizontally within its container */
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.slide {
+    display: none;
+}
+
+img {
+    width: 250px;
+    height: 200px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fade {
+    0%, 100% {
+        opacity: 0;
+    }
+    20%, 80% {
+        opacity: 1;
+    }
 }
 
 /* Toggle Switch */

@@ -9,10 +9,29 @@ colorToggle.addEventListener('change', () => {
     }
 });
 
-const slider = document.querySelector('.slider');
+let slideIndex = 0;
+showSlides();
 
-slider.addEventListener('input', () => {
-    const value = slider.value;
-    const hue = value * 1.2; // Adjust this factor for better color variation
-    body.style.backgroundColor = `hsl(${hue}, 50%, 80%)`;
-});
+function showSlides() {
+    let slides = document.getElementsByClassName("slide");
+    
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    
+    slideIndex++;
+    
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+    
+    slides[slideIndex - 1].style.display = "block";
+    
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+
+
+
+
+
