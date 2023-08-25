@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Artful Animations</title>
+</head>
+<body>
+    <header id="Home">
+        <h1>Artful Animations</h1>
+        <h2>Exploring the Beauty of CSS Animation</h2>
+    </header>
+    <main>
+        <p>Here we will be looking at some of the CSS code we can use to make our websites interactive.</p>
+        <p>To interacte with the css, just hover or clicke it with ur cursor</p>
+        <p>This are some of my favourites</p>
+
+        <!-- Interactive Art Tiles -->
+        <h3>Interactive Art Tiles</h3>
+        <p>A grid of art tiles that respond to hover interactions.
+            Interactive art tiles and the decorative light beams using pseudo-elements.</p>
+        <p>The pseudo-elements we have used here is ::before and ::after</p>
+        <section class="art-tiles">
+            <div class="art-tile"></div>
+            <div class="art-tile"></div>
+            <div class="art-tile"></div>
+            <!-- Add more art tiles here -->
+        </section>
+
+        <!-- Interactive Buttons -->
+        <h3>Interactive Buttons</h3>
+        <p>Here we have three buttons when you hover on any of them, they rise and change colour</p>
+        <section class="interactive-buttons">
+            <button class="btn">Button 1</button>
+            <button class="btn">Button 2</button>
+            <button class="btn">Button 3</button>
+        </section>
+
+        <!-- Slider -->
+        <h3>Slider</h3>
+        <p>This is a simple css item. It is a orizontal slider that changes the color scheme of the page as it's dragged.
+            CSS transition smoothly transitions the background colors.</p>
+        <p>we ususally need to accompany it with javascript code for the slider to be functional.</p>
+        <section class="slider-section">
+            <input type="range" class="slider" min="0" max="100" value="50">
+        </section>
+
+        <!-- Toggle Switch -->
+        <h3>Toggle</h3>
+        <p>We use this mainly to change the theme of the page from dark to light and vise versa</p>
+        <p>For the toggle to be functional you need javascript to make it change the color.</p>
+        <section class="toggle-section">
+            <label class="toggle">
+                <input type="checkbox" id="color-toggle">
+                <span class="toggle-slider"></span>
+            </label>
+        </section>
+
+        <!-- 3D Component - Rotating Cube -->
+        <h3>3D Elements</h3>
+        <p>CSS allows you to create 3D rotating elements using the transform property and its related properties. You can achieve various 3D effects like rotations, translations, and scaling. 
+            For 3D rotations specifically, you can use the rotateX, rotateY, and rotateZ functions.</p>
+        <p>Here we have a 3D rotating cube</p>
+        <section class="three-d-section">
+            <div class="rotating-cube">
+                <div class="face front">Front</div>
+                <div class="face back">Back</div>
+                <div class="face left">Left</div>
+                <div class="face right">Right</div>
+                <div class="face top">Top</div>
+                <div class="face bottom">Bottom</div>
+            </div>
+        </section>
+
+        <!-- CUstom Cursor-->
+        <h3>Custom Cursor</h3>
+        <p>If you noticed, whenever you hovered above any of the css examples the cursor changes.
+            CSS allows us to change how the cursor looks when it points a specific thing.
+        </p>
+        
+    </main>
+    <footer>
+        <div class="contact-info">
+            <p>Email: contact@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+        <nav class="footer-links">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+  
+</body>
+</html>
+
+
